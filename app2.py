@@ -2,13 +2,10 @@ import pickle
 import pandas as pd
 from flask import Flask, request, jsonify
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
-from flask_cors import CORS
 
 # Initialize Flask app
 app = Flask(__name__)
 
-
-CORS(app)  # Allow all origins
 
 
 # Load model and preprocessing objects
